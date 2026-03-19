@@ -226,7 +226,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
 {for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length ;i < len;++i) {
-    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.96);
+    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.36);
 }
 }
 }
@@ -243,7 +243,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("sbor"), gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1);
 {for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length ;i < len;++i) {
-    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(1);
+    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.40);
 }
 }
 }
