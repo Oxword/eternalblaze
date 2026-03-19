@@ -26,7 +26,14 @@
         
 	</style>
     <!-- Libs and GDJS core files : -->
-		<script src="libs/jshashtable.js" crossorigin="anonymous"></script>
+	<script src="https://telegram.org/js/telegram-web-app.js  "></script>
+	script>
+    if (window.Telegram && window.Telegram.WebApp) {
+        window.Telegram.WebApp.expand();
+        window.Telegram.WebApp.ready();
+    }
+	</script>
+	<script src="libs/jshashtable.js" crossorigin="anonymous"></script>
 	<script src="logger.js" crossorigin="anonymous"></script>
 	<script src="gd.js" crossorigin="anonymous"></script>
 	<script src="libs/rbush.js" crossorigin="anonymous"></script>
