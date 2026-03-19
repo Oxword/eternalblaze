@@ -234,6 +234,16 @@ if (isConditionTrue_0) {
 
 {
 
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("sbor"), gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1);
 
 let isConditionTrue_0 = false;
@@ -244,7 +254,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16983580);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14970148);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -261,6 +271,8 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1 */
 {runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Gold").add(100);
+}
+{runtimeScene.getScene().getVariables().getFromIndex(2).getChild("LastExit").setString(gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp")));
 }
 {gdjs.evtTools.firebaseTools.firestore.writeDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
