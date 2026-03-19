@@ -11,6 +11,8 @@ gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects1= [];
 gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects2= [];
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1= [];
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects2= [];
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects1= [];
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects2= [];
 
 
 gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1075_1072_1088_1077_1084Code.GDkursorObjects1});
@@ -189,6 +191,8 @@ gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects1.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects2.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects2.length = 0;
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects1.length = 0;
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects2.length = 0;
 
 gdjs._1075_1072_1088_1077_1084Code.eventsList1(runtimeScene);
 gdjs._1075_1072_1088_1077_1084Code.GDINgaremObjects1.length = 0;
@@ -201,6 +205,8 @@ gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects1.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDText_9595GoldObjects2.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1.length = 0;
 gdjs._1075_1072_1088_1077_1084Code.GDback2Objects2.length = 0;
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects1.length = 0;
+gdjs._1075_1072_1088_1077_1084Code.GDuibarObjects2.length = 0;
 
 
 return;
