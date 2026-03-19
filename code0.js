@@ -114,6 +114,7 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ErrorText"), gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("InputEmail"), gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDInputEmailObjects1);
 gdjs.copyArray(runtimeScene.getObjects("InputPassword"), gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDInputPasswordObjects1);
 /* Reuse gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDregObjects1 */
@@ -121,6 +122,10 @@ gdjs.copyArray(runtimeScene.getObjects("InputPassword"), gdjs._1089_1090_1072_10
 }
 {for(var i = 0, len = gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDregObjects1.length ;i < len;++i) {
     gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDregObjects1[i].getBehavior("Scale").setScale(0.56);
+}
+}
+{for(var i = 0, len = gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1.length ;i < len;++i) {
+    gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1[i].getBehavior("Text").setText("Идет регистрация");
 }
 }
 }
