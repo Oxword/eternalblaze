@@ -27,6 +27,8 @@ gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Co
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDback2Objects2= [];
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects1= [];
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects2= [];
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1= [];
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects2= [];
 
 
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.mapOfGDgdjs_9546_95951074_95951085_95951091_95951090_95951088_95951077_95951085_95951085_95951080_95951081_959532_95951076_95951074_95951086_95951088Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDkursorObjects1});
@@ -66,6 +68,21 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("GlobalGold"), gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1);
+{for(var i = 0, len = gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1.length ;i < len;++i) {
+    gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 gdjs.copyArray(runtimeScene.getObjects("Text_Gold"), gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDText_9595GoldObjects1);
 {for(var i = 0, len = gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDText_9595GoldObjects1.length ;i < len;++i) {
     gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDText_9595GoldObjects1[i].getBehavior("Text").setText("Золото: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold").getAsNumber()));
@@ -83,6 +100,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(6).setString("");
+}
 {gdjs.evtTools.firebaseTools.firestore.getDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(7), runtimeScene.getScene().getVariables().getFromIndex(6));
 }
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "gold", 0, 0, 0);
@@ -96,10 +115,22 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+}
 }
 
 }
@@ -176,6 +207,8 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "дворец", false);
 }
 }
@@ -214,6 +247,8 @@ isConditionTrue_0 = isConditionTrue_1;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "дворец", false);
 }
@@ -254,6 +289,8 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "гарем", false);
 }
 }
@@ -292,6 +329,8 @@ isConditionTrue_0 = isConditionTrue_1;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "гарем", false);
 }
@@ -332,6 +371,8 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "альянс", false);
 }
 }
@@ -371,6 +412,8 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+}
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "альянс", false);
 }
 }
@@ -409,6 +452,8 @@ gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Co
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDback2Objects2.length = 0;
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects1.length = 0;
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects2.length = 0;
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects2.length = 0;
 
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.eventsList0(runtimeScene);
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDkursorObjects1.length = 0;
@@ -437,6 +482,8 @@ gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Co
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDback2Objects2.length = 0;
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects1.length = 0;
 gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDuibarObjects2.length = 0;
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects2.length = 0;
 
 
 return;

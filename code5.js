@@ -11,6 +11,8 @@ gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects1= [];
 gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects2= [];
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects1= [];
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects2= [];
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1= [];
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects2= [];
 
 
 gdjs._1072_1083_1100_1103_1085_1089Code.mapOfGDgdjs_9546_95951072_95951083_95951100_95951103_95951085_95951089Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1072_1083_1100_1103_1085_1089Code.GDkursorObjects1});
@@ -135,6 +137,21 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("GlobalGold"), gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1);
+{for(var i = 0, len = gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1.length ;i < len;++i) {
+    gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 gdjs.copyArray(runtimeScene.getObjects("Text_Gold"), gdjs._1072_1083_1100_1103_1085_1089Code.GDText_9595GoldObjects1);
 {for(var i = 0, len = gdjs._1072_1083_1100_1103_1085_1089Code.GDText_9595GoldObjects1.length ;i < len;++i) {
     gdjs._1072_1083_1100_1103_1085_1089Code.GDText_9595GoldObjects1[i].getBehavior("Text").setText("Золото: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Gold").getAsNumber()));
@@ -152,6 +169,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(1).setString("");
+}
 {gdjs.evtTools.firebaseTools.firestore.getDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "gold", 0, 0, 0);
@@ -165,10 +184,22 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Gold")));
+}
 }
 
 }
@@ -189,6 +220,8 @@ gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects1.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects2.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects1.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects2.length = 0;
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects2.length = 0;
 
 gdjs._1072_1083_1100_1103_1085_1089Code.eventsList1(runtimeScene);
 gdjs._1072_1083_1100_1103_1085_1089Code.GDNewTiledSpriteObjects1.length = 0;
@@ -201,6 +234,8 @@ gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects1.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDback2Objects2.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects1.length = 0;
 gdjs._1072_1083_1100_1103_1085_1089Code.GDuibarObjects2.length = 0;
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1072_1083_1100_1103_1085_1089Code.GDGlobalGoldObjects2.length = 0;
 
 
 return;

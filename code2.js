@@ -19,6 +19,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects2= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects1= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects2= [];
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1= [];
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects2= [];
 
 
 gdjs._1076_1074_1086_1088_1077_1094Code.mapOfGDgdjs_9546_95951076_95951074_95951086_95951088_95951077_95951094Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1076_1074_1086_1088_1077_1094Code.GDkursorObjects1});
@@ -144,6 +146,21 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("GlobalGold"), gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1);
+{for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1.length ;i < len;++i) {
+    gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 gdjs.copyArray(runtimeScene.getObjects("Text_Gold"), gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1);
 {for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1.length ;i < len;++i) {
     gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1[i].getBehavior("Text").setText("Золото: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Gold").getAsNumber()));
@@ -161,6 +178,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(1).setString("");
+}
 {gdjs.evtTools.firebaseTools.firestore.getDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "gold", 0, 0, 0);
@@ -174,10 +193,22 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Gold")));
+}
 }
 
 }
@@ -192,12 +223,10 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15059020);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12724100);
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(1).setString("");
-}
 }
 
 }
@@ -215,7 +244,17 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15060516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16983580);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsString() == "ok");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Gold").getAsNumber() > 0);
+}
+}
 }
 }
 }
@@ -274,6 +313,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects2.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects2.length = 0;
 
 gdjs._1076_1074_1086_1088_1077_1094Code.eventsList1(runtimeScene);
 gdjs._1076_1074_1086_1088_1077_1094Code.GD_951076_951074_951086_951088_951077_951094Objects1.length = 0;
@@ -294,6 +335,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDuibarObjects2.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects1.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDGlobalGoldObjects2.length = 0;
 
 
 return;
