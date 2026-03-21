@@ -70,7 +70,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("GlobalGold"), gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1);
 {for(var i = 0, len = gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1.length ;i < len;++i) {
-    gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
+    gdjs._1074_1085_1091_1090_1088_1077_1085_1085_1080_1081_32_1076_1074_1086_1088Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(6)));
 }
 }
 }
@@ -129,7 +129,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 }
 
@@ -144,7 +144,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14991212);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15112028);
 }
 }
 if (isConditionTrue_0) {
@@ -185,7 +185,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14993788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15114604);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -207,7 +207,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "дворец", false);
 }
@@ -226,7 +226,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14993716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15117316);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -248,7 +248,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "дворец", false);
 }
@@ -267,7 +267,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14992444);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15113260);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -289,7 +289,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "гарем", false);
 }
@@ -308,7 +308,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15001556);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15123148);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -330,7 +330,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "гарем", false);
 }
@@ -349,7 +349,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15003596);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15125460);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -371,7 +371,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "альянс", false);
 }
@@ -390,7 +390,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15006132);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15128172);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -412,7 +412,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Gold")));
 }
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "альянс", false);
 }

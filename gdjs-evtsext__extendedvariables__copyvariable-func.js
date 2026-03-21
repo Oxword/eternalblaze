@@ -9,7 +9,7 @@ gdjs.evtsExt__ExtendedVariables__CopyVariable = {};
 gdjs.evtsExt__ExtendedVariables__CopyVariable.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ExtendedVariables__CopyVariable.userFunc0x10d3190 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ExtendedVariables__CopyVariable.userFunc0x10db148 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const sourceVariable = eventsFunctionContext.getArgument("SourceVariable");
@@ -27,7 +27,7 @@ gdjs.evtsExt__ExtendedVariables__CopyVariable.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__ExtendedVariables__CopyVariable.userFunc0x10d3190(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ExtendedVariables__CopyVariable.userFunc0x10db148(runtimeScene, eventsFunctionContext);
 
 }
 

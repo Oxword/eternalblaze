@@ -16,7 +16,7 @@ gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.eventsList0 = functio
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14824036);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(14929764);
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")));

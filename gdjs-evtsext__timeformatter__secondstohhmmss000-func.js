@@ -1,32 +1,40 @@
 
-if (typeof gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable !== "undefined") {
-  gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000 !== "undefined") {
+  gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable = {};
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.idToCallbackMap = new Map();
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000 = {};
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.userFunc0x10b5c60 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-const variable = runtimeScene.getGame().getVariables().get(eventsFunctionContext.getArgument("GlobalVariableName"));
-variable.setNumber(eventsFunctionContext.getArgument("GlobalVariableValue"));
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.userFunc0x109b6b0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+var format_time = function (time_second) {
+    date = new Date(null);
+    date.setMilliseconds(1000*time_second);
+    if (time_second >= 3600) {
+        return date.toISOString().substr(11, 12); // MM:SS.000
+    } else {
+        return date.toISOString().substr(14, 9); // HH:MM:SS.000
+    }
+}
+
+eventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument("TimeInSeconds"));
 };
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.userFunc0x10b5c60(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.userFunc0x109b6b0(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.func = function(runtimeScene, GlobalVariableName, GlobalVariableValue, parentEventsFunctionContext) {
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.func = function(runtimeScene, TimeInSeconds, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -35,8 +43,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ExtendedVariables"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ExtendedVariables"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("TimeFormatter"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("TimeFormatter"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -76,18 +84,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "GlobalVariableName") return GlobalVariableName;
-if (argName === "GlobalVariableValue") return GlobalVariableValue;
+if (argName === "TimeInSeconds") return TimeInSeconds;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return;
+return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__ExtendedVariables__ModifyGlobalVariable.registeredGdjsCallbacks = [];
+gdjs.evtsExt__TimeFormatter__SecondsToHHMMSS000.registeredGdjsCallbacks = [];
